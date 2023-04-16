@@ -25,7 +25,7 @@ public static class PizzaService
                                             //Apparently (Ap.) the type List has a method that returns the fist item found to meet a certain criteria.
   public static Pizza? Get(int id) => Pizzas.FirstOrDefault(pizza => pizza.Id == id);
 
-  // This method creates a new Pizza Object, sets an Id for it and Add the object to the Pizzas List.
+  // This method takes a new Pizza Object as a parameter, sets an Id for it and Add the object to the Pizzas List.
   public static void Add(Pizza pizza)
   {
     pizza.Id = nextId++;
